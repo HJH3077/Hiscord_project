@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>회원정보 관리</title>
+<title>금지어 관리</title>
 <style type="text/css">
 @import
 	"//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
@@ -15,19 +15,19 @@ body {
 	margin: 0;
 }
 
-#user_info {
+#ban_info {
 	width: 1500px;
 	height: 100vh;
 	margin-left: 50px;
 	background-color: #fff;
 }
 
-#user_head {
+#ban_head {
 	border-bottom: 1px solid #f1f3f5;
 	box-sizing: border-box;
 }
 
-#user_logo {
+#ban_logo {
 	text-align: center;
 	width: 100%;
 	color: black;
@@ -40,6 +40,7 @@ body {
 #nav {
 	box-sizing: border-box;
 	background-color: #fff;
+	width: 1500px;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
@@ -84,7 +85,7 @@ body {
 	font-family: 'fontAwesome';
 }
 
-#user_title {
+#ban_title {
 	color: white;
 }
 
@@ -154,9 +155,9 @@ tr {
 </head>
 <body>
 	<%@ include file="login_head.jsp"%>
-	<div id="user_info">
-		<div id="user_head">
-			<h1 id="user_logo">회원정보관리</h1>
+	<div id="ban_info">
+		<div id="ban_head">
+			<h1 id="ban_logo">금지어관리</h1>
 			<div id="nav">
 				<div class="nav_bar">
 					<a href="prohibited_word.jsp">금지어 관리</a>
@@ -169,19 +170,15 @@ tr {
 		<div id="searchbar">
 			<input id="search" type="search" name="input" placeholder="&#61442;">
 		</div>
-		<div id="user">
+		<div id="ban">
 			<div>
 				<form method="post" name="chk_form">
 					<table>
 						<thead style="background-color: #9370DB">
-							<tr id="user_title">
+							<tr id="ban_title">
 								<th style="width: 5%"><input type="checkbox" name="chkall"
 									onclick="chk_all()"></th>
-								<th style="width: 15%">아이디</th>
-								<th style="width: 15%">이름</th>
-								<th style="width: 15%">닉네임</th>
-								<th style="width: 35%">이메일</th>
-								<th style="width: 15%">가입날짜</th>
+								<th colspan="9">금지어</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -205,28 +202,28 @@ tr {
 								</c:choose> 
 								--%>
 							<tr>
-								<th><input type="checkbox" name="chk" value=""></th>
-								<th>kim</th>
-								<th>김씨</th>
-								<th>김부각</th>
-								<th>kkk111@naver.com</th>
-								<th>2021.06.25</th>
+								<td style="width: 5%"><input type="checkbox" name="chk" value=""></td>
+								<td>kim</td>
+								<td style="width: 5%"><input type="checkbox" name="chk" value=""></td>
+								<td>kim</td>
+								<td style="width: 5%"><input type="checkbox" name="chk" value=""></td>
+								<td>kim</td>
+								<td style="width: 5%"><input type="checkbox" name="chk" value=""></td>
+								<td>kim</td>
+								<td style="width: 5%"><input type="checkbox" name="chk" value=""></td>
+								<td>kim</td>
 							</tr>
 							<tr>
-								<th><input type="checkbox" name="chk" value=""></th>
-								<th>hong</th>
-								<th>홍씨</th>
-								<th>홍시</th>
-								<th>hhh111@gmail.com</th>
-								<th>2021.06.28</th>
-							</tr>
-							<tr>
-								<th><input type="checkbox" name="chk" value=""></th>
-								<th>bak</th>
-								<th>박씨</th>
-								<th>수박</th>
-								<th>bbb111@daum.net</th>
-								<th>2021.06.14</th>
+								<td><input type="checkbox" name="chk" value=""></td>
+								<td>kim</td>
+								<td><input type="checkbox" name="chk" value=""></td>
+								<td>kim</td>
+								<td><input type="checkbox" name="chk" value=""></td>
+								<td>kim</td>
+								<td><input type="checkbox" name="chk" value=""></td>
+								<td>kim</td>
+								<td><input type="checkbox" name="chk" value=""></td>
+								<td>kim</td>
 							</tr>
 						</tbody>
 					</table>
