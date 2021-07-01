@@ -21,7 +21,7 @@ body {
 	height: 100%;
 	text-align: center;
 	vertical-align: middle;
-	background-color: rgba(0, 0, 0, .85);
+	background-color: rgba(0, 0, 0, .95);
 	align-items: center;
 	justify-content: center;
 	z-index: 9999;
