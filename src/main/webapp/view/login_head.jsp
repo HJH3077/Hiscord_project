@@ -6,12 +6,15 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
-*{
+* {
 	text-decoration: none;
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
 
 /* 스크롤바 기능은 살리고 안보이게 하기 */
-::-webkit-scrollbar { display: none; }
+::-webkit-scrollbar {
+	display: none;
+}
 
 body {
 	margin: 0;
@@ -20,6 +23,10 @@ body {
 	display: flex;
 	-ms-overflow-style: none;
 	font-weight: 400;
+}
+
+#head * a:visited, a:disabled {
+	color: black;
 }
 
 #head {
@@ -50,46 +57,51 @@ body {
 	border-bottom: 1px solid #f1f3f5;
 }
 
-.visible_menu{
+.container .logo a:first-of-type{
+	font-family: 'Noto Sans', sans-serif;
+	font-style: italic;
+}
+
+.visible_menu {
 	position: absolute;
 	cursor: auto;
 	display: none;
-    background: #fff;
-    font-size: 1em;
-    text-align: left;
-    border: 1px solid rgba(34,36,38,.15);
-    border-radius: 0.4rem;
-    left: 60%!important;
-    right: 3%!important;
+	background: #fff;
+	font-size: 1em;
+	text-align: left;
+	border: 1px solid rgba(34, 36, 38, .15);
+	border-radius: 0.4rem;
+	left: 60% !important;
+	right: 3% !important;
 }
 
-.menu_list{
+.menu_list {
 	white-space: nowrap;
-	border-bottom: 1px solid #f1f3f5!important;
-    border-top: none!important;
-    padding: 16px!important;
-    cursor: pointer;
+	border-bottom: 1px solid #f1f3f5 !important;
+	border-top: none !important;
+	padding: 16px !important;
+	cursor: pointer;
 }
 
-.menu_list{
+.menu_list {
 	position: relative;
-    cursor: pointer;
-    display: block;
-    text-align: left;
-    line-height: 1em;
-    color: rgba(0,0,0,.87);
-    padding: 0.8rem 1rem!important;
-    font-size: 1rem;
-    font-weight: 400;
-    z-index: 9999;
+	cursor: pointer;
+	display: block;
+	text-align: left;
+	line-height: 1em;
+	color: rgba(0, 0, 0, .87);
+	padding: 0.8rem 1rem !important;
+	font-size: 1rem;
+	font-weight: 400;
+	z-index: 9999;
 }
 
-.menu_list:hover{
+.menu_list:hover {
 	opacity: 0.5;
 	background-color: silver;
 }
 
-.menu_list a:visited, a:active{
+.logo a:visited, a:active {
 	color: black;
 }
 
@@ -100,18 +112,18 @@ body {
 	font-size: 20px;
 }
 
-.list .room{
+.list .room {
 	padding: 13px;
 	margin-top: 7px;
 }
 
-.chat{
+.chat {
 	padding: auto;
 	height: 60px;
 	border-bottom: 1px solid #f1f3f5;
 }
 
-.chat .room_add{
+.chat .room_add {
 	padding: 13px;
 	text-align: center;
 	font-size: 20px;
@@ -119,35 +131,45 @@ body {
 </style>
 <script type="text/javascript">
 	function chat_add() {
-		
+
 	}
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 	<div id="head">
 		<div class="container">
 			<div class="logo">
-				<a href="main.jsp"> <img alt="logo" src="../images/logo.PNG"
-					width="100"></a>
-				<div class="listbox">메뉴
+				<a href="login_main.jsp"> <h2>Hiscord</h2> </a>
+				<div class="listbox">
+					<div class="option_img">
+						<img alt="옵션" src="../images/option.png" width="45">
+					</div>
 					<div class="visible_menu">
-						<div role="option" class="menu_list" style="pointer-events: all;"><a href="#">친구</a></div>
-						<div role="option" class="menu_list"><a href="#">설정</a></div>
-						<div role="option" class="menu_list"><a href="#">건의사항</a></div>
-						<div role="option" class="menu_list"><a href="#">로그아웃</a></div>
+						<div role="option" class="menu_list" style="pointer-events: all;">
+							<a href="#">친구</a>
+						</div>
+						<div role="option" class="menu_list">
+							<a href="#">설정</a>
+						</div>
+						<div role="option" class="menu_list">
+							<a href="#">건의사항</a>
+						</div>
+						<div role="option" class="menu_list">
+							<a href="#">로그아웃</a>
+						</div>
 					</div>
 				</div>
 			</div>
 			<script type="text/javascript">
-	            $(".listbox").click(function(){
-	                if($(".visible_menu").is(":visible")){
-	                    $(".visible_menu").css("display","none");
-	                }
-	                else{
-	                    $(".visible_menu").css("display","block");
-	                }
-	            })
+				$(".option_img").click(function() {
+					if ($(".visible_menu").is(":visible")) {
+						$(".visible_menu").css("display", "none");
+					} else {
+						$(".visible_menu").css("display", "block");
+					}
+				})
 			</script>
 			<div class="list">
 				<div class="room">
@@ -231,8 +253,9 @@ body {
 			</div>
 			<div class="chat">
 				<div class="room_add">
-					<a href="#" onclick="chat_add()"> <span>채팅방 추가</span> <img alt="추가"
-						src="../images/plus.png" style="width: 30px; height: 20px;">
+					<a href="#" onclick="chat_add()"> <span>채팅방 추가</span> <img
+						alt="추가" src="../images/plus.png"
+						style="width: 30px; height: 20px;">
 					</a>
 				</div>
 			</div>

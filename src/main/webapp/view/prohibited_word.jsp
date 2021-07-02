@@ -9,25 +9,22 @@
 <style type="text/css">
 @import
 	"//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
-
+	
 body {
 	padding: 0;
 	margin: 0;
 }
-
 #ban_info {
 	width: 1500px;
 	height: 100vh;
 	margin-left: 50px;
 	background-color: #fff;
 }
-
-#ban_head {
+#admin_head {
 	border-bottom: 1px solid #f1f3f5;
 	box-sizing: border-box;
 }
-
-#ban_logo {
+#admin_logo {
 	text-align: center;
 	width: 100%;
 	color: black;
@@ -36,7 +33,6 @@ body {
 	padding: 10px;
 	margin: auto;
 }
-
 #nav {
 	box-sizing: border-box;
 	background-color: #fff;
@@ -45,11 +41,9 @@ body {
 	display: flex;
 	justify-content: center;
 }
-
-.nav_bar a:visited, a:link {
+.nav_bar a:visited, a:disabled {
 	color: white;
 }
-
 #nav .nav_bar {
 	border: 1px solid black;
 	text-align: center;
@@ -57,7 +51,6 @@ body {
 	background-color: #9370DB;
 	line-height: 1.5;
 }
-
 #searchbar {
 	height: 100px;
 	width: 100%;
@@ -65,7 +58,6 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-
 #search::-webkit-input-placeholder {
 	font-family: FontAwesome;
 	font-weight: normal;
@@ -76,7 +68,6 @@ body {
 	padding-top: 2px;
 	color: hsl(9, 40%, 60%);
 }
-
 #searchbar #search {
 	margin-left: 20px;
 	height: 35px;
@@ -84,29 +75,24 @@ body {
 	border-radius: 7px;
 	font-family: 'fontAwesome';
 }
-
 #ban_title {
 	color: white;
 }
-
 table {
 	border-collapse: collapse;
 	text-align: center;
 	width: 1300px;
 }
-
 table, tr, td, th {
 	padding: 2px;
 	margin: auto;
 	font-size: 18px;
 	border: 1px solid black;
 }
-
 tr {
 	font-size: 20px;
 	line-height: 2.5;
 }
-
 /* 페이징 */
 #paging {
 	margin: 45px auto;
@@ -114,17 +100,14 @@ tr {
 	width: 1300px;
 	text-align: center;
 }
-
 #page a {
 	color: #000080;
 	margin-left: 25px;
 }
-
 #page img {
 	width: 30px;
 	height: 20px;
 }
-
 #paging button {
 	height: 41px;
 	width: 80px;
@@ -139,7 +122,6 @@ tr {
 	function delete_go() {
 		location.href = "";
 	}
-
 	function chk_all() {
 		if (chk_form.chkall.checked == true) {
 			for (i = 0; i < chk_form.chk.length; i++) {
@@ -156,8 +138,8 @@ tr {
 <body>
 	<%@ include file="login_head.jsp"%>
 	<div id="ban_info">
-		<div id="ban_head">
-			<h1 id="ban_logo">금지어관리</h1>
+		<div id="admin_head">
+			<h1 id="admin_logo">금지어관리</h1>
 			<div id="nav">
 				<div class="nav_bar">
 					<a href="prohibited_word.jsp">금지어 관리</a>

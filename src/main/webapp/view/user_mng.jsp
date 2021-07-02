@@ -22,12 +22,12 @@ body {
 	background-color: #fff;
 }
 
-#user_head {
+#admin_head {
 	border-bottom: 1px solid #f1f3f5;
 	box-sizing: border-box;
 }
 
-#user_logo {
+#admin_logo {
 	text-align: center;
 	width: 100%;
 	color: black;
@@ -40,12 +40,13 @@ body {
 #nav {
 	box-sizing: border-box;
 	background-color: #fff;
+	width: 1500px;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
 }
 
-.nav_bar a:visited, a:link {
+#nav .nav_bar a:visited, a:link {
 	color: white;
 }
 
@@ -155,8 +156,8 @@ tr {
 <body>
 	<%@ include file="login_head.jsp"%>
 	<div id="user_info">
-		<div id="user_head">
-			<h1 id="user_logo">회원정보관리</h1>
+		<div id="admin_head">
+			<h1 id="admin_logo">회원정보관리</h1>
 			<div id="nav">
 				<div class="nav_bar">
 					<a href="prohibited_word.jsp">금지어 관리</a>

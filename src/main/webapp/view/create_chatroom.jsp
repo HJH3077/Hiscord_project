@@ -13,40 +13,52 @@ body {
 	overflow-x: hidden;
 }
 
-#suggestion {
+#create_chatroom {
 	position: absolute;
 	top: 0 !important;
 	left: 0 !important;
 	width: 100%;
 	height: 100%;
-	text-align: center;
 	vertical-align: middle;
-	background-color: rgba(0, 0, 0, .95);
 	align-items: center;
 	justify-content: center;
 	z-index: 9999;
 }
 
-#sg_box {
-	background-color: white;
-	width: 460px;
+#make {
+	background-color: #F5F5F5;
+	width: 450px;
 	position: absolute;
 	left: 40%;
 	top: 30%;
-	padding: 10px;
+	padding: 15px;
+	border: 1px solid black;
 	border-radius: 0.5em;
 }
 
-#sg_box legend h3  {
-	font-size: 25px;
+#make h2 {
+	text-align: center;
+	font-size: 35px;
 	margin: 10px;
+	padding-bottom: 5px;
 }
 
-#sg_box #msg_send{
-	margin-top: 5px;
-	width: 80px;
-	font-size: 15px;
-	line-height: 1.3;
+#make p {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 5px auto;
+}
+
+#make input {
+	width: 440px;
+	height: 25px;
+}
+
+#make button{
+	margin-top: 10px;
+	margin-right: 2px;
+	float: right; 
+	width: 70px;
 }
 </style>
 <script
@@ -57,17 +69,12 @@ body {
 </head>
 <body>
 	<%@ include file="login_main.jsp"%>
-	<div id="suggestion">
-		<div id="sg_box">
-			<fieldset style="border-radius: 0.3em;">
-				<legend><h3>건의사항을 알려주세요!</h3></legend>
-				<div>
-					<textarea id="sug" name="content" rows="15" cols="55"></textarea>
-				</div>
-				<div>
-					<button id="msg_send">보내기</button>
-				</div>
-			</fieldset>
+	<div id="create_chatroom">
+		<div id="make">
+			<h2>채팅방 개설</h2>
+			<p>채팅방 이름</p>
+			<input type="text" id="chat_room" name="room">
+			<button id="create">만들기</button>
 		</div>
 	</div>
 </body>
