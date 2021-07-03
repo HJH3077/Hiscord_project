@@ -19,6 +19,7 @@ body {
 	left: 0 !important;
 	width: 100%;
 	height: 100%;
+	background-color: rgba(0, 0, 0, .95);
 	vertical-align: middle;
 	align-items: center;
 	justify-content: center;

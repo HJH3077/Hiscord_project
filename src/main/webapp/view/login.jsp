@@ -68,7 +68,7 @@ body {
 	margin-top: 20px;
 }
 
-.find a:active, a:visited {
+* a:link, a:visited {
 	color: black;
 }
 </style>
@@ -80,7 +80,7 @@ body {
 	<%@ include file="logout_head.jsp"%>
 	<div id="login_container">
 		<h1 id="login_title">
-			<a href="main.jsp">Hiscord</a>
+			<a href="logout_main.jsp">Hiscord</a>
 		</h1>
 		<form method="post">
 			<div id="login">

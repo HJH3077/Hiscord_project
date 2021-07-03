@@ -71,35 +71,36 @@ body {
 	margin-left: 5px;
 }
 
-.save{
+.save {
 	cursor: pointer;
-    border-radius: 0.3rem;
-    border: none;
-    padding: 0.7em 1.5em 0.7em;
-    line-height: 1em;
-    font-style: normal;
-    text-align: center;
-    background-color: #f2711c;
-    color: #fff;
-    float: right;
-    margin: 20px;
+	border-radius: 0.3rem;
+	border: none;
+	padding: 0.7em 1.5em 0.7em;
+	line-height: 1em;
+	font-style: normal;
+	text-align: center;
+	background-color: #f2711c;
+	color: #fff;
+	float: right;
+	margin: 20px;
 }
 </style>
-<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript">
 	$(function() {
 		$('input[name="font"]').change(function() {
-			if($(this).is(":checked")){
+			if ($(this).is(":checked")) {
 				var msg = $(this).val();
-				if(msg == "mini"){
+				if (msg == "mini") {
 					$(".comment").css("font-size", "10px");
-				} else if(msg == "small"){
+				} else if (msg == "small") {
 					$(".comment").css("font-size", "15px");
-				} else if(msg == "middle"){
+				} else if (msg == "middle") {
 					$(".comment").css("font-size", "20px");
-				} else if(msg == "large"){
+				} else if (msg == "large") {
 					$(".comment").css("font-size", "30px");
-				} else if(msg == "big"){
+				} else if (msg == "big") {
 					$(".comment").css("font-size", "40px");
 				}
 			}
@@ -142,10 +143,8 @@ body {
 						<div class="radio">
 							<input name="font" type="radio" value="big"> big
 						</div>
-					</form>
-					<div>
 						<button class="save">저장</button>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>

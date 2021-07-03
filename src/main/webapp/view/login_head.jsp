@@ -25,17 +25,16 @@ body {
 	font-weight: 400;
 }
 
-#head * a:visited, a:disabled {
+#head * a:visited, a:link {
 	color: black;
 }
 
-#head {
-	overflow-x: hidden;
+#main_head {
 	box-sizing: border-box;
 	width: 370px;
 	min-width: 370px;
 	margin-left: 7%;
-	height: 100%;
+	max-height: 100%;
 }
 
 .container {
@@ -117,13 +116,13 @@ body {
 	margin-top: 7px;
 }
 
-.chat {
+.chat_room_add {
 	padding: auto;
 	height: 60px;
 	border-bottom: 1px solid #f1f3f5;
 }
 
-.chat .room_add {
+.chat_room_add .room_add {
 	padding: 13px;
 	text-align: center;
 	font-size: 20px;
@@ -138,7 +137,7 @@ body {
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-	<div id="head">
+	<div id="main_head">
 		<div class="container">
 			<div class="logo">
 				<a href="login_main.jsp"> <h2>Hiscord</h2> </a>
@@ -251,7 +250,7 @@ body {
 					</a>
 				</div>
 			</div>
-			<div class="chat">
+			<div class="chat_room_add">
 				<div class="room_add">
 					<a href="#" onclick="chat_add()"> <span>채팅방 추가</span> <img
 						alt="추가" src="../images/plus.png"

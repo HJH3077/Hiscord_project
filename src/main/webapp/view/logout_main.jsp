@@ -43,6 +43,10 @@ iframe{
 	height: 100%;
 	min-height: 550px;
 }
+
+* a:link, a:visited {
+	color: black;
+}
 </style>
 </head>
 <body>
