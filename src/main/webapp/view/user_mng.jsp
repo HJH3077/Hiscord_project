@@ -40,7 +40,7 @@ body {
 #nav {
 	box-sizing: border-box;
 	background-color: #fff;
-	width: 1500px;
+	width: 1300px;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
