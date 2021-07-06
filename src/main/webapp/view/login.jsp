@@ -97,9 +97,9 @@ body {
 					</div>
 				</fieldset>
 				<div class="find">
-					<a href="#">아이디 찾기</a>
+					<a href="id_find.jsp">아이디 찾기</a>
 					<span>|</span>
-					<a href="#">비밀번호 찾기</a>
+					<a href="pw_find.jsp">비밀번호 찾기</a>
 					<span>|</span>
 					<a href="join.jsp">회원가입</a>
 				</div>

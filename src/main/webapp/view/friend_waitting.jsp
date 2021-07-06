@@ -67,7 +67,7 @@ th img {
 	border-radius: 25px;
 }
 
-tr{
+tr {
 	font-size: 20px;
 	line-height: 2.5;
 }
@@ -88,16 +88,6 @@ tr{
 #page img {
 	width: 30px;
 	height: 20px;
-}
-
-#paging button {
-	height: 41px;
-	width: 80px;
-	float: right;
-	background-color: #9370DB;
-	color: white;
-	font-size: 15px;
-	border-radius: 0.5em;
 }
 
 * a:link, a:visited {
@@ -145,22 +135,10 @@ tr{
 							<tr>
 								<th style="width: 5%"><img alt="로고"
 									src="../images/discord.png"></th>
-								<th style="width: 85%; padding-left: 15px;" align="left">김씨</th>
-								<th style="width: 5%"><img alt="대화하기"
-									src="../images/msg.png"></th>
-								<th style="width: 5%"><img alt="삭제하기" src="../images/x.png"></th>
-							</tr>
-							<tr>
-								<th><img alt="로고" src="../images/discord.png"></th>
-								<th align="left" style="padding-left: 15px;">홍씨</th>
-								<th><img alt="수락하기" src="../images/msg.png"></th>
-								<th><img alt="거절하기" src="../images/x.png"></th>
-							</tr>
-							<tr>
-								<th><img alt="로고" src="../images/discord.png"></th>
-								<th align="left" style="padding-left: 15px;">박씨</th>
-								<th><img alt="수락하기" src="../images/msg.png"></th>
-								<th><img alt="거절하기" src="../images/x.png"></th>
+								<th style="width: 85%; padding-left: 15px;" align="left">친구1</th>
+								<th style="width: 5%"><img alt="수락하기"
+									src="../images/yes.png"></th>
+								<th style="width: 5%"><img alt="거절하기" src="../images/no.png"></th>
 							</tr>
 						</tbody>
 					</table>
@@ -197,7 +175,6 @@ tr{
 					</c:otherwise>
 				</c:choose>
 			</div>
-			<button onclick="friend_add()">친구추가</button>
 		</div>
 	</div>
 </body>
