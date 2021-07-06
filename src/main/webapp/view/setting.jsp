@@ -115,7 +115,7 @@ body {
 			<div id="sethead">설정</div>
 			<div id="setcontent">
 				<div id="setmenu">
-					<a class="menu" href="setting.jsp">폰트설정</a> <a class="menu">내
+					<a class="menu" href="setting.jsp">폰트설정</a> <a class="menu" href="mypage.jsp">내
 						정보</a>
 				</div>
 				<div id="activ_tab">

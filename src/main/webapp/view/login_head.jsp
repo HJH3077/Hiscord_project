@@ -147,13 +147,13 @@ body {
 					</div>
 					<div class="visible_menu">
 						<div role="option" class="menu_list" style="pointer-events: all;">
-							<a href="#">친구</a>
+							<a href="friend.jsp">친구</a>
 						</div>
 						<div role="option" class="menu_list">
-							<a href="#">설정</a>
+							<a href="setting.jsp">설정</a>
 						</div>
 						<div role="option" class="menu_list">
-							<a href="#">건의사항</a>
+							<a href="suggestion.jsp">건의사항</a>
 						</div>
 						<div role="option" class="menu_list">
 							<a href="#">로그아웃</a>
@@ -252,7 +252,7 @@ body {
 			</div>
 			<div class="chat_room_add">
 				<div class="room_add">
-					<a href="#" onclick="chat_add()"> <span>채팅방 추가</span> <img
+					<a href="create_chatroom.jsp" onclick="chat_add()"> <span>채팅방 추가</span> <img
 						alt="추가" src="../images/plus.png"
 						style="width: 30px; height: 20px;">
 					</a>
